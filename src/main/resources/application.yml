@@ -1,0 +1,19 @@
+
+#spring.profiles.include=db
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testh2
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true # ?? ???? h2-console ??? h2 ??? ??? ? ??.
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true  # ??? format?? ??? ???.
